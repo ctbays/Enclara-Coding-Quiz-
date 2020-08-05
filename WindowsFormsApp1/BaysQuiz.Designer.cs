@@ -41,7 +41,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(129, 414);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 42);
             this.button2.TabIndex = 2;
@@ -52,7 +52,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(226, 362);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 39);
             this.button3.TabIndex = 3;
@@ -63,7 +63,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(56, 316);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(327, 42);
             this.button4.TabIndex = 4;
@@ -76,7 +76,7 @@
             this.richTextBox1.AcceptsTab = true;
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(35, 62);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(363, 149);
             this.richTextBox1.TabIndex = 8;
@@ -86,7 +86,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(56, 369);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 20);
             this.textBox1.TabIndex = 6;
@@ -134,9 +134,10 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BaysQuiz";
             this.Text = "Bays Quiz";
+            this.Load += new System.EventHandler(this.BaysQuiz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

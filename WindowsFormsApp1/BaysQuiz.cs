@@ -38,11 +38,11 @@ namespace WindowsFormsApp1
         public static bool checkPalinSent(string sentence)
         {   // remove capitalization, remove spaces and commas
             string s = sentence.ToLower();
-            sentence = Regex.Replace(""," ", ",");
-            int x = sentence.Length;
+            s = Regex.Replace(s,@"\s","");
+            int x = s.Length;
             for (int i = 0; i < x; i++, x--)
             {
-                if (sentence[i] != sentence[x- 1])
+                if (s[i] != s[x- 1])
                 {
                     return false;
                 }
@@ -155,6 +155,11 @@ namespace WindowsFormsApp1
             string inputpalindrome = richTextBox1.Text;
             richTextBox1.Clear();
             richTextBox1.AppendText("There are " + countPalinSent(inputpalindrome).ToString() + " palindrome sentences in the above input.");
+        }
+
+        private void BaysQuiz_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
