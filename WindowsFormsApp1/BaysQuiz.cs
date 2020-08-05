@@ -52,9 +52,9 @@ namespace WindowsFormsApp1
             // Function to count palindrome words  
             public static int countPalin(string str)
         {
-
-            string[] words = str.Split(' ');
             int count = 0;
+            string[] words = str.Split(' ');
+            
 
             foreach (var word in words)
             {
@@ -71,8 +71,9 @@ namespace WindowsFormsApp1
         public static int countPalinSent(string str)
         {
             // split input by sentences
-            string[] sentences = str.Split('!', '.', '?');
             int count = 0;
+            string[] sentences = str.Split('!', '.', '?');
+            
            
             foreach (string sentence in sentences)
             {
@@ -88,9 +89,10 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //code to clear results of rtb
+            //code to clear results of rtb and txtb
             richTextBox1.Clear();
             richTextBox1.SelectionStart = 0;
+            textBox1.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)
